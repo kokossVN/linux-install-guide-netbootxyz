@@ -5,7 +5,7 @@
 
 #### Chuẩn bị:
 - Docker ( ưu tiên linux :v )
-- [dhcp-netboot.xyz](https://github.com/samdbmg/dhcp-netboot.xyz): docker <netboot.xyz> sử dụng qua DHCP
+- [dhcp-netboot.xyz](https://github.com/samdbmg/dhcp-netboot.xyz): docker [netboot.xyz](https://netboot.xyz) sử dụng qua DHCP
 - Máy ảo ( có pxe/network boot  )
 
 #### Cài đặt:
