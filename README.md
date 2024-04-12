@@ -69,17 +69,18 @@ docker run --net=host --cap-add=NET_ADMIN -e DHCP_RANGE_START=192.168.0.1 samdbm
   ![fcitx configure](./image/fcitx_1.png) 
   - Ở `Search Input Method` , tìm unikey, Double-click để thêm , ẩn Ok
   - ***tùy chọn: ở Global Option, ở phần Trigger Input Method: có thể thêm phím hoặc sửa các phím ở bên phải để tùy chỉnh phím thay đổi kiểu gõ***
-  <details>
+  - <details>
     <summary>sau khi thêm unikey, có thể dùng lệnh này để thêm `Ctrl + Shift` vào phím thay đổi kiểu gõ</summary>
   ```bash
       sed -i -e '/^0=/d' -e 's/\(\[Hotkey\/TriggerKeys\]\)/\1\n0=Control+Shift+Shift_L/' ~/.config/fcitx5/config
   ```
   </details>
+
   - Cuối cùng chạy lệnh này để tối ưu bộ gõ của hệ thống
   ```bash
   echo "export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx" >> .bashrc
+  export QT_IM_MODULE=fcitx
+  export XMODIFIERS=@im=fcitx" >> .bashrc
   ```
 - Trình duyệt và ứng dụng văn phòng ( libre office )
   - Chạy lệnh sau dưới quyền admin (sudo), nhập mật khẩu và chờ cài đặt
