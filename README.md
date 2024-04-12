@@ -1,4 +1,4 @@
-# Netboot.xyz Installation guide (Vietnamese)
+# Hướng dẫn cài linux qua Netboot.xyz ( cho người mới bắt đầu )
 
 
 ### Hướng dẫn cài hệ điều hành qua mạng (áp dụng cho linux :v)
@@ -11,6 +11,7 @@
 ##### Máy khách
 - có hỗ trợ Pxe/Network boot 
 - kết nối chúng mạng với máy chủ
+- có RAM ít nhất 8GB (vì netboot sẽ đưa hệ điều hành vào RAM :V)
 
 #### Cài đặt: 
 
@@ -56,4 +57,40 @@ docker run --net=host --cap-add=NET_ADMIN -e DHCP_RANGE_START=192.168.0.1 samdbm
 - sau khi cài đặt xong, khởi động lại
 ![Install Done](./image/installer_done.png) 
 
+##### Cài bộ gõ và công cụ văn phòng 
+- Bộ gõ tiếng việt (fcitx5)
+  - Mở Terminal Emulator
+  - chạy lệnh sau với quyền admin (sudo), nhập mật khẩu và chờ cài đặt
+  ```bash
+  sudo pacman -Sy --noconfirm fcitx5 fcitx5-gtk fcitx5-configtool fcitx5-unikey
+  ```
+  - Khi cài đặt xong , khởi động fcitx5 trong start menu 
+  - khi đó góc dưới bên phải màn hình sẽ xuất hiện icon bàn phím, ấn chuột phải và chọn `Configure` 
+  ![fcitx configure](./image/fcitx_1.png) 
+  - Ở `Search Input Method` , tìm unikey, Double-click để thêm , ẩn Ok
+  - ***tùy chọn: ở Global Option, ở phần Trigger Input Method: có thể thêm phím hoặc sửa các phím ở bên phải để tùy chỉnh phím thay đổi kiểu gõ***
+  - <details>
+    <summary>sau khi thêm unikey, có thể dùng lệnh này để thêm `Ctrl + Shift` vào phím thay đổi kiểu gõ</summary>
+    <p>
+  ```bash
+      sed -i -e '/^0=/d' -e 's/\(\[Hotkey\/TriggerKeys\]\)/\1\n0=Control+Shift+Shift_L/' ~/.config/fcitx5/config
+  ```
+    </p>
+  </details>
+  - Cuối cùng chạy lệnh này để tối ưu bộ gõ của hệ thống
+  ```bash
+  echo "export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx" >> .bashrc
+  ```
+- Trình duyệt và ứng dụng văn phòng ( libre office )
+  - Chạy lệnh sau dưới quyền admin (sudo), nhập mật khẩu và chờ cài đặt
+  ```bash
+  sudo pacman -Sy --noconfirm firefox libreoffice-frech
+  ```
 
+#### Những công cụ sao lưu và khôi phục dữ liệu 
+  
+  - [Deja Dup](https://apps.gnome.org/DejaDup) 
+  - [Back In Time](https://github.com/bit-team/backintime) 
+  - [Time Shift](https://github.com/teejee2008/timeshift) 
