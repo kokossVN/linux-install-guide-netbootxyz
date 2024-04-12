@@ -48,7 +48,7 @@ docker run --net=host --cap-add=NET_ADMIN -e DHCP_RANGE_START=192.168.0.1 samdbm
     - phân vùng EFI ( khởi động hệ điều hành ),File Type: unformated, Size: 500Mb, ở flag tick vào boot-grub
     - Phân vùng swap ( RAM trên ổ cứng ), File Type: LinuxSwap, Size: 512Mb~5% tổng dung lượng ổ cứng  ( tùy vào nhu cầu sử dụng và bộ nhớ cho phép )
     - Phân vùng hệ điều hành ( chứa dữ liệu hệ điều hành và toàn bộ dữ liệu người dùng ), File Type: ext4,Mount Point: / , size: toàn bộ dung lượng còn lại của ổ cứng
-    ![Create partition](./image/installer_3_2.png) 
+    ![Create partition](./image/installer_3.png) 
 - Ở user - đặt tên máy tính , tên người dùng và mật khẩu 
 ![User](./image/installer_4.png) 
 - ở summary - Install - Install Now sau đó chờ cài đặt  
