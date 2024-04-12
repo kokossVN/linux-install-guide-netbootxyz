@@ -9,7 +9,7 @@
 - Máy ảo ( có pxe/network boot  )
 
 #### Cài đặt: 
-
+##### Máy chủ
 - Sử dụng ufw để mở tưởng lửa các port như sau :
 
 ```bash
@@ -22,5 +22,12 @@ sudo ufw allow proto tcp from any to any port 80
 ```bash
 docker run --net=host --cap-add=NET_ADMIN -e DHCP_RANGE_START=192.168.0.1 samdbmg/dhcp-netboot.xyz
 ``` 
+*ở phần DHCP_RANGE_START là 3 dãy số đầu của `ip a ` xxx.xxx.xxx.1* (vd 192.168.1.1)
 
- *ở phần DHCP_RANGE_START là địa chỉ của router mạng (có thể là 192.168.1.1 hoặc 192.168.0.1)*  
+##### Máy khách
+- Kết nối chung mạng với máy chủ 
+- Khởi động máy và boot vào chế độ Pxe/Network Boot 
+![PXE frist Start](image/pxe_frist_boot.png) 
+- Trong hướng dẫn này sẽ cài Manjaro Gnome, ở Menu netboot chọn Live CD - Manjaro - Manjaro Gnome
+![Manjaro LiveCD](./image/in_live_cd.png) 
+
