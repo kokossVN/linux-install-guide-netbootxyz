@@ -77,7 +77,7 @@ docker run --net=host --cap-add=NET_ADMIN -e DHCP_RANGE_START=192.168.0.1 samdbm
   ```
   </details>
 
-  - Cuối cùng chạy lệnh này để tối ưu bộ gõ của hệ thống
+  - Tối ưu bộ gõ của hệ thống
   ```bash
   echo "export GTK_IM_MODULE=fcitx
   export QT_IM_MODULE=fcitx
