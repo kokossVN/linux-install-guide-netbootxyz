@@ -1,21 +1,21 @@
 # Hướng dẫn cài linux qua Netboot.xyz ( cho người mới bắt đầu )
 
 
-### Hướng dẫn cài hệ điều hành qua mạng (áp dụng cho linux :v)
+## Hướng dẫn cài hệ điều hành qua mạng (áp dụng cho linux :v)
 
-#### Chuẩn bị:
-#####  Máy chủ
+### Chuẩn bị:
+####  Máy chủ
 - Docker ( ưu tiên linux :v )
 - [dhcp-netboot.xyz](https://github.com/samdbmg/dhcp-netboot.xyz): docker [netboot.xyz](https://netboot.xyz) sử dụng qua DHCP
 
-##### Máy khách
+#### Máy khách
 - có hỗ trợ Pxe/Network boot 
 - kết nối chúng mạng với máy chủ
 - có RAM ít nhất 8GB (vì netboot sẽ đưa hệ điều hành vào RAM :V)
 
-#### Cài đặt: 
+### Cài đặt: 
 
-##### Máy chủ
+#### Máy chủ
 - Sử dụng ufw để mở tưởng lửa các port như sau :
 ```bash
 sudo ufw allow proto udp from any to any port 67
@@ -55,9 +55,11 @@ docker run --net=host --cap-add=NET_ADMIN -e DHCP_RANGE_START=192.168.0.1 samdbm
 - ở summary - Install - Install Now sau đó chờ cài đặt  
 ![Start Install](./image/installer_5.png) 
 - sau khi cài đặt xong, khởi động lại
-![Install Done](./image/installer_done.png) 
-
-##### Cài bộ gõ và công cụ văn phòng 
+#### Giao diện sau khi cài đặt
+![Install Done](./image/desktop.png) 
+### cài đặt các công cụ (bằng lệnh)
+Tất cả cá công cụ đều có thể được cài qua 2 cách
+#### Cài bộ gõ và công cụ văn phòng 
 - Bộ gõ tiếng việt (fcitx5)
   - Mở Terminal Emulator
   - chạy lệnh sau với quyền admin (sudo), nhập mật khẩu và chờ cài đặt
@@ -83,13 +85,31 @@ docker run --net=host --cap-add=NET_ADMIN -e DHCP_RANGE_START=192.168.0.1 samdbm
   export QT_IM_MODULE=fcitx
   export XMODIFIERS=@im=fcitx" >> .bashrc
   ```
-- Trình duyệt và ứng dụng văn phòng ( libre office )
-  - Chạy lệnh sau dưới quyền admin (sudo), nhập mật khẩu và chờ cài đặt
-  ```bash
-  sudo pacman -Sy --noconfirm firefox libreoffice-frech
-  ```
 
-#### Những công cụ sao lưu và khôi phục dữ liệu 
+- Ứng dụng văn phòng ( libre office )
+  - Chạy lệnh sau dưới quyền admin (sudo), nhập mật khẩu và cài đặt
+  ```bash
+  sudo pacman -Sy libreoffice-frech
+  ```
+  - Sau Đó khởi chạy Libre Office ở StartMenu
+  ![LibreOffice](./image/libre.png)
+- Trình Duyệt 
+  - Firefox
+  ```bash
+  sudo pacman -Sy firefox
+  ```
+  - Chrome (Chromium)
+  ```bash
+  sudo pacman -Sy chromium
+  ```
+### Cài đặt các công cụ ( bằng giao diện)
+Tất cả cá công cụ đều có thể được cài qua 2 cách
+Trong manjaro có chương trình tên pamac (Add/Remove Software)
+![pacmac](path) 
+#### cài phần mềm chỉnh sửa ảnh  (Gimp) và ứng dụng vẽ
+
+
+### Những công cụ sao lưu và khôi phục dữ liệu 
   
   - [Deja Dup](https://apps.gnome.org/DejaDup) 
   - [Back In Time](https://github.com/bit-team/backintime) 
