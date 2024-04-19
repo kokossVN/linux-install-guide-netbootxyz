@@ -58,7 +58,7 @@ docker run --net=host --cap-add=NET_ADMIN -e DHCP_RANGE_START=192.168.0.1 samdbm
 #### Giao diện sau khi cài đặt
 ![Install Done](./image/desktop.png) 
 ### cài đặt các công cụ (bằng lệnh)
-Tất cả cá công cụ đều có thể được cài qua 2 cách
+Tất cả các công cụ đều có thể được cài qua 2 cách
 #### Cài bộ gõ và công cụ văn phòng 
 - Bộ gõ tiếng việt (fcitx5)
   - Mở Terminal Emulator
@@ -103,7 +103,7 @@ Tất cả cá công cụ đều có thể được cài qua 2 cách
   sudo pacman -Sy chromium
   ```
 ### Cài đặt các công cụ ( bằng giao diện)
-Tất cả cá công cụ đều có thể được cài qua 2 cách
+Tất cả các công cụ đều có thể được cài qua 2 cách
 Trong manjaro có chương trình tên pamac (Add/Remove Software)
 ![pacmac](path) 
 #### cài phần mềm chỉnh sửa ảnh  (Gimp) và ứng dụng vẽ (Krita)
