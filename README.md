@@ -111,9 +111,9 @@ Trong manjaro có chương trình tên pamac (Add/Remove Software)
 ![gimp](./image/gui-install-gimp.png) 
 ![krita](./image/krita-gui-install.png) 
 - Nếu hiện ra cửa sổ nếu không biết gì cứ ấn Chose (Uy tín)
-
-
+![deps](./image/depeds.png) 
 - Cuối cùng hiện ra cửa sổ Summary chọn Apply
+![summary](./image/summary.png) 
 
 ### Những công cụ sao lưu và khôi phục dữ liệu 
   
