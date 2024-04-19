@@ -106,8 +106,14 @@ Tất cả cá công cụ đều có thể được cài qua 2 cách
 Tất cả cá công cụ đều có thể được cài qua 2 cách
 Trong manjaro có chương trình tên pamac (Add/Remove Software)
 ![pacmac](path) 
-#### cài phần mềm chỉnh sửa ảnh  (Gimp) và ứng dụng vẽ
+#### cài phần mềm chỉnh sửa ảnh  (Gimp) và ứng dụng vẽ (Krita)
+- Chọn ứng dụng cần tải, Install để chọn pack và sau đó ân Apply
+![gimp](./image/gui-install-gimp.png) 
+![krita](./image/krita-gui-install.png) 
+- Nếu hiện ra cửa sổ nếu không biết gì cứ ấn Chose (Uy tín)
 
+
+- Cuối cùng hiện ra cửa sổ Summary chọn Apply
 
 ### Những công cụ sao lưu và khôi phục dữ liệu 
   
