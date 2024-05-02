@@ -23,15 +23,22 @@
     ```bash
     sudo ./VentoyWeb.sh
     ```
+    
     ![ventoy web](../image/ventoy_web.png)
-    ![ventoy web1](../image/ventoy_web_web1.png) 
+    ![ventoy web1](../image/ventoy_web_web1.png)
+    
     - Chọn usb ở phần device và cài đặt (Nếu không có usb hãy ấn vào nút nhỏ bên cạnh device để làm mới)
-    ![ventoy web2](../image/ventoy_web_web2.png) 
+  
+    ![ventoy web2](../image/ventoy_web_web2.png)
+
     - Lưu tất cả dữ liệu quan trọng trước khi cài đặt ventoy vào usb
-    ![ventoy web3](../image/ventoy_web_web3.png) 
-    ![Kiểm tra tận 2 lần luôn, tất tinh tế](../image/ventoy_web_web4.png) 
-    - Đợi cho đến khi cài cài đặt thành công 
-    ![ventoy web5](../image/ventoy_web_web5.png) 
+    
+    ![ventoy web3](../image/ventoy_web_web3.png)
+    ![Kiểm tra tận 2 lần luôn, tất tinh tế](../image/ventoy_web_web4.png)
+
+    - Đợi cho đến khi cài cài đặt thành công
+    
+    ![ventoy web5](../image/ventoy_web_web5.png)
 
   - Với windows : chưa dùng nhưng chạy file Ventoy2Disk.exe và làm tương tự như trên (maybe)
 
