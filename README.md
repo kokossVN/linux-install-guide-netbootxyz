@@ -108,7 +108,7 @@ Tất cả các công cụ đều có thể được cài qua 2 cách
 ### Cài đặt các công cụ ( bằng giao diện)
 Tất cả các công cụ đều có thể được cài qua 2 cách
 Trong manjaro có chương trình tên pamac (Add/Remove Software)
-![pacmac](path) 
+![pacmac](./image/pamac.png) 
 #### cài phần mềm chỉnh sửa ảnh  (Gimp) và ứng dụng vẽ (Krita)
 - Chọn ứng dụng cần tải, Install để chọn pack và sau đó ân Apply
 ![gimp](./image/gui-install-gimp.png) 
@@ -119,12 +119,11 @@ Trong manjaro có chương trình tên pamac (Add/Remove Software)
 ![summary](./image/summary.png) 
 
 ### Những công cụ sao lưu và khôi phục dữ liệu 
-  - [Deja Dup](https://apps.gnome.org/DejaDup) 
-  - [Back In Time](https://github.com/bit-team/backintime) 
   - [Time Shift](https://github.com/teejee2008/timeshift) 
+  
 
 
 ### QnA
   - Không có mạng thì có cài được hệ điều hành không ?
-    - Không :P linux cần có mạng
-
+    - Linux không có mạng là điều cực kỳ tệ.Nhưng nếu không có mạng thì hoàn toàn có thể sử dụng mang từ điện thoại, bằng cách kết nối cổng sạc (USB), máy tính sẽ kết nối mạng thông qua mobile hotspot trên điện thoại (2024 rồi mà không có internet :( )
+    - Không 🐧
