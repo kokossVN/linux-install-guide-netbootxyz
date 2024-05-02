@@ -3,7 +3,7 @@
 
 ## Hướng dẫn cài hệ điều hành qua mạng (áp dụng cho linux :v)
 
-[Ngoài ra có thể có thể cái qua USB Boot (ISO)](docs/install_with_usb.md) 
+[Ngoài ra có thể có thể cài qua USB Boot (ISO)](docs/install_with_usb.md) 
 
 ### Chuẩn bị:
 ####  Máy chủ
