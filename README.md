@@ -84,9 +84,9 @@ Tất cả các công cụ đều có thể được cài qua 2 cách
 
   - Tối ưu bộ gõ của hệ thống
   ```bash
-  echo "export GTK_IM_MODULE=fcitx
-  export QT_IM_MODULE=fcitx
-  export XMODIFIERS=@im=fcitx" >> .bashrc
+  sudo echo "GTK_IM_MODULE=fcitx
+  QT_IM_MODULE=fcitx
+  XMODIFIERS=@im=fcitx" >> /etc/environment
   ```
 
 - Ứng dụng văn phòng ( libre office )
