@@ -3,6 +3,8 @@
 
 ## Hướng dẫn cài hệ điều hành qua mạng (áp dụng cho linux :v)
 
+[Ngoài ra có thể có thể cái qua USB Boot (ISO)](docs/install_with_usb.md) 
+
 ### Chuẩn bị:
 ####  Máy chủ
 - Docker ( ưu tiên linux :v )
@@ -44,9 +46,10 @@ docker run --net=host --cap-add=NET_ADMIN -e DHCP_RANGE_START=192.168.0.1 samdbm
 - Keyboard để mặc định - Next 
 - partitions 
   - chọn Manual partitioning 
-  - New Parrition Table - Chọn GPT 
+  - New Partition Table - Chọn GPT 
+    ![Partition Table](./image/installer_3_1.png) 
   - Tạo lần lượt 3 phân vùng
-    - phân vùng EFI ( khởi động hệ điều hành ),File Type: unformated, Size: 500Mb, ở flag tick vào boot-grub
+    - phân vùng EFI ( khởi động hệ điều hành ),File Type: unformatted, Size: 500Mb, ở flag tick vào boot-grub
     - Phân vùng swap ( RAM trên ổ cứng ), File Type: LinuxSwap, Size: 512Mb~5% tổng dung lượng ổ cứng  ( tùy vào nhu cầu sử dụng và bộ nhớ cho phép )
     - Phân vùng hệ điều hành ( chứa dữ liệu hệ điều hành và toàn bộ dữ liệu người dùng ), File Type: ext4,Mount Point: / , size: toàn bộ dung lượng còn lại của ổ cứng
     ![Create partition](./image/installer_3.png) 
@@ -116,7 +119,12 @@ Trong manjaro có chương trình tên pamac (Add/Remove Software)
 ![summary](./image/summary.png) 
 
 ### Những công cụ sao lưu và khôi phục dữ liệu 
-  
   - [Deja Dup](https://apps.gnome.org/DejaDup) 
   - [Back In Time](https://github.com/bit-team/backintime) 
   - [Time Shift](https://github.com/teejee2008/timeshift) 
+
+
+### QnA
+  - Không có mạng thì có cài được hệ điều hành không ?
+    - Không :P linux cần có mạng
+
