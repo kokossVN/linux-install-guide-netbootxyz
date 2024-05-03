@@ -11,9 +11,14 @@
 - [dhcp-netboot.xyz](https://github.com/samdbmg/dhcp-netboot.xyz): docker [netboot.xyz](https://netboot.xyz) sử dụng qua DHCP
 
 #### Máy khách
-- có hỗ trợ Pxe/Network boot 
-- kết nối chúng mạng với máy chủ
-- có RAM ít nhất 8GB (vì netboot sẽ đưa hệ điều hành vào RAM :V)
+- Máy thật 
+  - có hỗ trợ Pxe/Network boot 
+  - kết nối chúng mạng với máy chủ
+  - có RAM ít nhất 2GB 
+- Máy ảo (VM)
+  - có RAM ít nhất 2GB 
+  - có hỗ trợ Pxe/Network boot 
+  [Hướng dẫn cài đặt máy ảo bằng Vbox](docs/install_on_vbox.md) 
 
 ### Cài đặt: 
 
