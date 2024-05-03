@@ -125,7 +125,7 @@ Trong manjaro có chương trình tên pamac (Add/Remove Software)
 ![summary](./image/summary.png) 
 
 ### Những công cụ sao lưu và khôi phục dữ liệu 
-  - [Time Shift](https://github.com/teejee2008/timeshift) 
+  - [Time Shift](https://github.com/teejee2008/timeshift)  ([Hướng dẫn sử dụng timeshift ](./docs/timeshift.md) )
   
 
 
